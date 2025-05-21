@@ -1,0 +1,14 @@
+/* General Styles */
+body, html, #root, .app-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+
+

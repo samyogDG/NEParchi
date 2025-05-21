@@ -1,0 +1,202 @@
+/* AboutPage.css */
+
+@font-face {
+  font-family: 'Centaur';
+  src: url('./assets/fonts/CENTAUR.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'BellMT'; 
+  src: url('./assets/fonts/Baskervville-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Algerian';
+  src: url('./assets/fonts/Algerian\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CentaurMT';
+  src: url('./assets/fonts/CentaurMT.otf') format('opentype');
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about-container {
+  flex: 1;
+  padding: 90px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-content h1 {
+  font-family: 'BellMT';
+  font-size: 2.8em;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-family: 'Centaur'; 
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #000;
+  max-width: 800px;
+  margin: 40px auto 40px;
+}
+
+.about-heading {
+  margin: 210px auto 270px;
+}
+
+/* Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.about-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.about-card h2 {
+  font-family: 'Algerian';
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-card p {
+  font-family: 'Centaur';
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Articles Link */
+.articles-link-container {
+  margin-top: 40px;
+}
+
+.articles-link {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #4f0000;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.articles-link:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+/* For screens smaller than 1024px (Medium screens and smaller) */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 100px 20px;
+  }
+  
+  .about-heading {
+    margin: 218px auto 280px;
+  }
+  
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  /* Force one column layout for medium and small screens */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about-card {
+    padding: 15px;
+  }
+
+  .about-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+
+  .articles-link {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* For screens smaller than 480px (Mobile devices) */
+@media (max-width: 480px) {
+  .about-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .about-container {
+    padding: 100px 20px;
+  }
+
+  /* Increase space between elements */
+  .about-grid {
+    gap: 10px;
+  }
+
+  .about-card {
+    padding: 10px;
+  }
+
+  .about-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .about-card p {
+    font-size: 0.85rem;
+  }
+
+  .articles-link {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

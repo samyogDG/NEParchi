@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4f0000; /* Maroon background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  z-index: 1000;
+  
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-height: 200px; /* Logo size */
+}
